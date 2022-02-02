@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>ZoMo.com</title>
+        <link rel="shortcut icon" href="zomo2.png" >
+    </head>
+<body>
+   <section>
+       <div class="circle"></div>
+        <header>
+        <a href="#" class="logo"><img src="zomo2.png" height="180%" width="150%"></a>
+        <ul>
+            <li><a href="#">Meus pedidos</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contato </a></li>
+            <li><a href="#">Sobre nós</a></li>    
+        </ul>         
+        </header>
+         <div class="content">
+            <div class="textBox">
+               <h2>Não é apenas Essência<br>é <span>ZoMo</span></h2>
+               <p>Nossa fábrica tem como princípio trabalhar o novo.<br> Buscamos sempre coisas diferentes para trazer novidades aos nossos clientes, aqui convivemos com empreendedores que estão de olho nas mais recentes tecnologias do mercado.</p>
+               <a href="#">Saiba mais </a>
+               </div>
+            <div class="imgBox"> 
+                <img src="cho.png" height="100%" width="100%" class="starbucks">
+            </div>
+         </div> 
+         <ul class="thumb">
+             <li><img src="blue.png"  onclick="imgSlider('blue.png');changeCircleColor('#fff')" height="90px" width="90px"></li>
+             <li><img src="miami.png" onclick="imgSlider('miami.png');changeCircleColor('#fff')" height="90px" width="90px"></li>
+             <li><img src="her.png" onclick="imgSlider('her.png');changeCircleColor('	#fff')" height="90px" width="90px"></li>
+         </ul> 
+         <ul class="sci">
+             <li><a href="#"><img src="facebook-removebg-preview.png"height="50px" width="50px"></a></li>
+             <li><a href="#"><img src="twitter.png"height="50px" width="50px"></a></li>
+             <li><a href="#"><img src="instagram.png"height="40px" width="50px"></a></li>
+         </ul>      
+   </section>  
+   <script type="text/javascript">
+   function imgSlider(anything){
+       document.querySelector('.starbucks').src =anything;
+   }
+   function changeCircleColor(color){
+       const circle= document.querySelector('.circle');
+       circle.style.background= color;
+   }
+</script> 
+</body>
+</html>
